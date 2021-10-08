@@ -1,0 +1,31 @@
+<div class="home">
+ <div class="row align-center">
+   <div class="small-12 medium-7 columns">
+     <table class="main-table">
+       <thead>
+         <tr>
+           <th>To-do List</th>
+           <th></th>
+           <th></th>
+           <th></th>
+         </tr>
+       </thead>
+       <transition-group name="fade" mode="out-in" tag="tbody">
+         <tr v-for="task in tasks" :key="task.name">
+           <td width="75%" v-text="task.name" class="line" >
+           </td>
+           <td width="10%" class="text-right">
+             <button class="fa fa-check" aria-hidden="true" @click="setTaskComplete(task)">Complete</button>
+           </td>
+           <td width="10%" class="text-right">
+             <button class="fa fa-times" aria-hidden="true" @click.prevent="deleteTask(task)">Delete</button>
+           </td>
+            <td width="10%"> <span :class='{"taskCompleted": task.completed, "taskUncompleted": !task.completed}'></span> </td>
+
+          
+         </tr>
+       </transition-group>
+     </table>
+   </div>
+ </div>
+</div>

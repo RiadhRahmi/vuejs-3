@@ -1,0 +1,43 @@
+.home {
+    margin-top: 2rem;
+
+    h4 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 2rem 0;
+    }
+
+    tbody {
+        background-color: #8080800d;
+    }
+
+    thead {
+        background-color: #0000002e;
+    }
+
+    th {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #0b0a0a
+    }
+
+    .taskCompleted {
+           background: green;
+           width: 10px;
+           height: 10px;
+           border-radius: 50%;
+           display: block;
+           text-align: center;
+           margin-left: auto;
+           margin-right: auto;
+    }
+
+    .taskUncompleted{
+         background: red;
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         display: block;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
